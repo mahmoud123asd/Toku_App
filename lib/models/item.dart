@@ -12,6 +12,6 @@ class ItemModel {
       required this.enName});
   playSound() {
     final player = AudioPlayer();
-    player.play(AssetSource(sound));
+    player.play(AssetSource(sound), mode: PlayerMode.lowLatency);
   }
 }
